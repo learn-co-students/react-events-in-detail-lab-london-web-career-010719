@@ -7,11 +7,13 @@ export default class CoordinatesButton extends Component {
     this.state = {};
   }
 
+  handleClick = event => {
+    this.props.onReceiveCoordinates([event.clientX, event.clientY]);
+  };
+
   render() {
     return (
-      <button onClick={this.props.onReceiveCoordinates}>
-        Coordinates Button
-      </button>
+      <button onClick={() => this.handleClick()}>Coordinates Button</button>
     );
   }
 }
