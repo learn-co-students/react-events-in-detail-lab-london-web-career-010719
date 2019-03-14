@@ -3,7 +3,14 @@ import ReactDOM from 'react-dom';
 
 // These must be defined for code to work in browser
 import CoordinatesButton from './components/CoordinatesButton';
-import DelayedButton from './components/DelayedButton';
+import DelayedButton from './components/DelayedButton.jsx';
+
+// coordinatesProducer = (x, y) => {
+//   coordArray = [x,y]
+//   return coordArray
+// }
+
+
 
 ReactDOM.render(
   <div>
